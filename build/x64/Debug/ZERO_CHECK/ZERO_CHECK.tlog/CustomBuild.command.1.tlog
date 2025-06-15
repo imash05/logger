@@ -1,0 +1,10 @@
+^C:\USERS\IMASH\DOCUMENTS\GITHUB\LOGGER\BUILD\CMAKEFILES\3B05E5A4435A7377A4076925E31A3C1E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/imash/Documents/GitHub/logger -BC:/Users/imash/Documents/GitHub/logger/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/imash/Documents/GitHub/logger/build/LogWriter.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
